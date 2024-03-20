@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "them",
+  "version": "${version}",
+  "name": "ThEm",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/GGPC/ThEm"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/them/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "liam.them.client.ThEmClient"
+    ],
+    "main": [
+      "liam.them.ThEm"
+    ]
+  },
+  "mixins": [
+    "them.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
